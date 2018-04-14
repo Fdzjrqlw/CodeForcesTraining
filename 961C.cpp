@@ -15,7 +15,7 @@ int n , result = 0x7f7f7f7f;
 int seq[m + 1] , vis[m + 1];
 
 void update(){
-    //case 1
+    //case 1 & 2
     int t1 = 0 , t2 = 0 , c1 , c2 ;
 
     for (int i = 1 ; i <= m ; ++i){
@@ -35,8 +35,6 @@ void update(){
     result = min(result , t1) ;
     result = min(result , t2) ;
 
-
-    //case2
 }
 
 void dfs(int pos){
